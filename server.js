@@ -11,6 +11,7 @@ app.use(bodyParser.json());
 app.engine('.ejs', require('ejs').__express);
 app.set('view engine', 'ejs');
 
+//require('./leafletembed')(leafletembed);
 require('./routes')(app);
 
 app.listen(port, function () {
